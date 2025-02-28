@@ -1,0 +1,7 @@
+select
+    Title,
+    Rating
+from imdb
+inner join earning
+on earning.movie_id = imdb.movie_id
+where MetaCritic > 60 and Domestic > 100000000 and Title like '%2012%';
